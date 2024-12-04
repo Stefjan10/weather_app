@@ -1,0 +1,982 @@
+{
+	"info": {
+		"_postman_id": "14b10bc7-e17e-481c-a90b-39a7ca299cd1",
+		"name": "Malten",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30766653"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Sign up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "sthe2",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sthe@videndjurs.net",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ABCabc123!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/users/signup",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "sthe2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ABCabc123!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/users/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log out",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/users/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Greeting",
+			"item": [
+				{
+					"name": "Greeting fra server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "CATEGORIES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/categories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CATEGORIES POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "categoryname",
+									"value": "Foredrag",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/categories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CATEGORIES GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/categories/66be1f43b1003e8e38689109",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"categories",
+								"66be1f43b1003e8e38689109"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CATEGORIES PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "categoryname",
+									"value": "Det grønne LAB",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/categories/66be4e916212b26062288652",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"categories",
+								"66be4e916212b26062288652"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CATEGORIES DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "categoryname",
+									"value": "Popcorn",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/categories/66be1f43b1003e8e38689109",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"categories",
+								"66be1f43b1003e8e38689109"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "EVENTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/events",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVENTS GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/events/66be28dec1ad7cdbf4c53487",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"events",
+								"66be28dec1ad7cdbf4c53487"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVENTS GET SEARCH",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/events/search/test",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"events",
+								"search",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVENT POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "heading",
+									"value": "Håndvævede boligtekstiler i X-rum",
+									"type": "text"
+								},
+								{
+									"key": "eventimage",
+									"type": "file",
+									"src": "/C:/Users/sthe2/Webudvikler/serversideprogrammering/afsluttendeopgave/public/images/Steenbergrum.jpg"
+								},
+								{
+									"key": "date",
+									"value": "12.08.2024–18.08.2024",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Er du til smuk brugskunst i alle farver, så kom og besøg vævefællesskabet Anette Steenberg og Margit Jensen.\\n\\nAnette og Margit udstiller og sælger håndvævede unika tekstiler – viskestykker, karklude, håndklæder, puder og kludetæpper.\\n\\nAlt er bæredygtigt og fremstillet i de bedste naturmaterialer. \\n\\nButikken har åbent\\n\\nMandag – fredag 11.00-17.00\\n\\nLørdag og søndag 11.00-15.00",
+									"type": "text"
+								},
+								{
+									"key": "time.starttime",
+									"value": "11:00",
+									"type": "text"
+								},
+								{
+									"key": "time.endtime",
+									"value": "15:00",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "X-rum",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "66be4e7d6212b2606228864e",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/events",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVENT PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "heading",
+									"value": "Hallelujah",
+									"type": "text"
+								},
+								{
+									"key": "eventimage",
+									"type": "file",
+									"src": "/C:/Users/sthe2/Webudvikler/confusing_site/public/images/shoppinglist/AIRFORCE.png"
+								},
+								{
+									"key": "date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is a test",
+									"type": "text"
+								},
+								{
+									"key": "time.starttime",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "time.endtime",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "66be1f6eb1003e8e38689110",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/events/66be4f7967a4eee7e53f311c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"events",
+								"66be4f7967a4eee7e53f311c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVENTS GET SEARCH Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/events/66be2ef158ec64abb43ae8c2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"events",
+								"66be2ef158ec64abb43ae8c2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Opening hours",
+			"item": [
+				{
+					"name": "OPENING HOURS GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/openinghours",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"openinghours"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OPENING HOURS POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": \"RØD HEST\",\r\n    \"openinghours\": \"Mandag – fredag 11-17 - Lørdag – søndag 10-15\",\r\n    \"information\": \"\",\r\n    \"address\": \"Butikken i hovedbygningen\",\r\n    \"social\": \"Følg RØD HEST på Facebook og Instagram\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/openinghours",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"openinghours"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OPENING HOURS EDIT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": \"Central PARK\",\r\n    \"openinghours\": \"9:00 AM - 5:00 PM\",\r\n    \"information\": \"Open daily except holidays\",\r\n    \"social\": \"@centralpark\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/openinghours/66be46b27b01eddefbbae8c0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"openinghours",
+								"66be46b27b01eddefbbae8c0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OPENING HOURS DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/openinghours/66be46b27b01eddefbbae8c0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"openinghours",
+								"66be46b27b01eddefbbae8c0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contacts",
+			"item": [
+				{
+					"name": "CONTACT GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/contacts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONTACT POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "contactimage",
+									"type": "file",
+									"src": "/C:/Users/sthe2/Webudvikler/serversideprogrammering/afsluttendeopgave/public/images/NL.jpg"
+								},
+								{
+									"key": "name",
+									"value": "Nina Renée Larsen",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "Projektchef – M8 og ekstern projektrådgivning",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nina@maltfabrikken.dk",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "+45 25 70 35 29",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/contacts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONTACT PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "contactimage",
+									"type": "file",
+									"src": "/C:/Users/sthe2/Webudvikler/serversideprogrammering/afsluttendeopgave/public/images/1723748710623-MJ.jpg"
+								},
+								{
+									"key": "name",
+									"value": "Marianne Jensen",
+									"type": "text"
+								},
+								{
+									"key": "position",
+									"value": "Administrativ leder – administration og HR",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "marianne@maltfabrikken.dk",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "+45 60 86 00 08",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/contacts/66be51669752ad1dd8629be4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"contacts",
+								"66be51669752ad1dd8629be4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONTACT DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/contacts/66be4cbd7c7deacf8cc563bb",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"contacts",
+								"66be4cbd7c7deacf8cc563bb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Webshop",
+			"item": [
+				{
+					"name": "PRODUCTS GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PRODUCTS POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "productname",
+									"value": "Kunstplakat af Karolin Schwab: “Listening to the Other Side”",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "900",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "OM KUNSTNEREN\nTyske Karolin Schwab er skulptør og beskæftiger sig primært med de følelser og spørgsmål, der opstår i mødet mellem menneske og natur. Det gør hun ved både at tage naturen ind i udstillingsrummet og skabe kunstinstallationer i naturen. Under sit ophold har hun særligt været optaget af Ebeltoft vig, som både adskiller og forbinder lokalsamfundet. Det har inspireret hende til værket EKKO, hvor to tragte i cortenstål skal opstilles på hver side af vigen, som symbol på både den samhørighed og afstand vandet skaber. Karolin Schwab var i residens hos Malt AIR i 2020, hvor hun fik 2  værker opkøbt til ARKENS Skulpturpark.\n\nOM VÆRKET\nListening to the Other Side er et kunsttryk, der på samme måde som værket EKKO repræsenterer den måde som vigen både adskiller og forbinder lokalsamfundet. Kunsttrykket er delvist unikt og bliver trykt på spejlfolie, hvor hvert værk er færdiggjort i hånden med et penselstrøg af Karolin Schwab, hvilket bringer varme og individualitet til det minimalistiske udtryk.Råhvid silketryk på fuldflade spejlfolie.\nLimiteret kunst edition af 52 stk.\n70 x 100 cm",
+									"type": "text"
+								},
+								{
+									"key": "coverimage",
+									"type": "file",
+									"src": "/C:/Users/sthe2/Webudvikler/serversideprogrammering/afsluttendeopgave/public/images/200511_Poster-mockup01.jpg"
+								},
+								{
+									"key": "gallery",
+									"type": "file",
+									"src": [
+										"/C:/Users/sthe2/Webudvikler/serversideprogrammering/afsluttendeopgave/public/images/200511_Poster-mockup01.jpg",
+										"/C:/Users/sthe2/Webudvikler/serversideprogrammering/afsluttendeopgave/public/images/MG_6135-SRGB-scaled.jpg"
+									]
+								},
+								{
+									"key": "ISBN",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "udgivet",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PRODUCTS PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "productname",
+									"value": "Kunstplakat af Karolin Schwab: “Listening to the Other Side”",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "900",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "OM KUNSTNEREN\nTyske Karolin Schwab er skulptør og beskæftiger sig primært med de følelser og spørgsmål, der opstår i mødet mellem menneske og natur. Det gør hun ved både at tage naturen ind i udstillingsrummet og skabe kunstinstallationer i naturen. Under sit ophold har hun særligt været optaget af Ebeltoft vig, som både adskiller og forbinder lokalsamfundet. Det har inspireret hende til værket EKKO, hvor to tragte i cortenstål skal opstilles på hver side af vigen, som symbol på både den samhørighed og afstand vandet skaber. Karolin Schwab var i residens hos Malt AIR i 2020, hvor hun fik 2  værker opkøbt til ARKENS Skulpturpark.\n\nOM VÆRKET\nListening to the Other Side er et kunsttryk, der på samme måde som værket EKKO repræsenterer den måde som vigen både adskiller og forbinder lokalsamfundet. Kunsttrykket er delvist unikt og bliver trykt på spejlfolie, hvor hvert værk er færdiggjort i hånden med et penselstrøg af Karolin Schwab, hvilket bringer varme og individualitet til det minimalistiske udtryk.Råhvid silketryk på fuldflade spejlfolie.\nLimiteret kunst edition af 52 stk.\n70 x 100 cm",
+									"type": "text"
+								},
+								{
+									"key": "coverimage",
+									"type": "file",
+									"src": "/C:/Users/sthe2/Webudvikler/serversideprogrammering/afsluttendeopgave/public/images/200511_Poster-mockup01.jpg"
+								},
+								{
+									"key": "gallery",
+									"type": "file",
+									"src": [
+										"/C:/Users/sthe2/Webudvikler/serversideprogrammering/afsluttendeopgave/public/images/200511_Poster-mockup01.jpg",
+										"/C:/Users/sthe2/Webudvikler/serversideprogrammering/afsluttendeopgave/public/images/MG_6135-SRGB-scaled.jpg"
+									]
+								},
+								{
+									"key": "ISBN",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "udgivet",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5015/products/66be5e0db0c4479ad1fc99c1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"products",
+								"66be5e0db0c4479ad1fc99c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PRODUCTS DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5015/products/66be5e0db0c4479ad1fc99c1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5015",
+							"path": [
+								"products",
+								"66be5e0db0c4479ad1fc99c1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
